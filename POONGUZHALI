@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hospital Registration Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 40%;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align: center;
+    color: #0f766e;
+    margin-bottom: 20px;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea{
+    resize: none;
+}
+
+.gender{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.gender input{
+    width: auto;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #115e59;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Hospital Registration Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Gender</label>
+        <div class="gender">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email address">
+
+        <label>Address</label>
+        <textarea rows="3" placeholder="Enter your address"></textarea>
+
+        <label>Department</label>
+        <select>
+            <option>Select Department</option>
+            <option>General Medicine</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Dermatology</option>
+        </select>
+
+        <label>Symptoms</label>
+        <textarea rows="3" placeholder="Describe your symptoms"></textarea>
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
